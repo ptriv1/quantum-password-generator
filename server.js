@@ -15,7 +15,7 @@ app.get('/quantum-password', async (req, res) => {
     const data = await response.json();
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
     const password = data.data.map(number => chars[number % chars.length]).join('');
-    res.send(`Quantum password: ${password}`);
+    res.send(password);
 
 });
 
