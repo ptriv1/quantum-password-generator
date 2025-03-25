@@ -4,11 +4,11 @@ function generatePassword() {
     fetch("/quantum-password")
         .then(response => response.text())
         .then(password => {
-            document.getElementById("output").innerText = password;
+            document.getElementById("passwordOutput").value = password;
         })
         .catch(error => {
             console.error("Error generating password:", error);
-            document.getElementById("output").innerText = "Failed to generate password.";
+            document.getElementById("passwordOutput").value = "Failed to generate password.";
         });
 }
 

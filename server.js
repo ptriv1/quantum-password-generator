@@ -1,9 +1,9 @@
 const express = require('express');
+const path = require('path');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 const app = express();
 
-const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/hello', (req, res) => {
