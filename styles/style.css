@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0d0d0d; /* dark, professional tone */
+    color: #e0e0e0; /* soft light text */
+    font-size: 16px;
+    line-height: 1.5;
+  }
